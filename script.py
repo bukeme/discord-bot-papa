@@ -5,6 +5,9 @@ import google.generativeai as genai
 from collections import defaultdict
 from keep_alive import keep_alive
 import os
+from dotenv import load_dotenv
+
+load_dotenv()
 
 DISCORD_TOKEN = os.getenv('DISCORD_TOKEN')
 GEMINI_API_KEY = os.getenv('GEMINI_API_KEY')
